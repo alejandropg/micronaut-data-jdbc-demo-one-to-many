@@ -14,7 +14,7 @@ class ParentRepositoryTest {
     private lateinit var repository: ParentRepository
 
     @Test
-    internal fun `save spaces`() {
+    internal fun `save parent`() {
         val children = mutableListOf<Child>()
         val parent = Parent("parent", children)
         children.addAll(
