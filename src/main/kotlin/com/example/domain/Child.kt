@@ -15,8 +15,6 @@ data class Child(
 
     @field:Id @GeneratedValue val id: Int? = null
 
-
-
 ) {
 
     override fun equals(other: Any?): Boolean {
