@@ -11,7 +11,7 @@
     <parent>
         <groupId>io.micronaut</groupId>
         <artifactId>micronaut-parent</artifactId>
-        <version>2.5.9</version>
+        <version>3.0.0</version>
     </parent>
 
     <properties>
@@ -23,8 +23,8 @@
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <kapt.incremental.apt>true</kapt.incremental.apt>
 
-        <micronaut.version>2.5.9</micronaut.version>
-        <micronaut.data.version>2.4.7</micronaut.data.version>
+        <micronaut.version>3.0.0</micronaut.version>
+        <micronaut.data.version>3.0.0</micronaut.data.version>
         <micronaut.runtime>netty</micronaut.runtime>
         <exec.mainClass>com.example.ApplicationKt</exec.mainClass>
     </properties>
@@ -160,6 +160,11 @@
                         <annotationProcessorPath>
                             <groupId>io.micronaut</groupId>
                             <artifactId>micronaut-validation</artifactId>
+                            <version>${micronaut.version}</version>
+                        </annotationProcessorPath>
+                        <annotationProcessorPath>
+                            <groupId>io.micronaut</groupId>
+                            <artifactId>micronaut-http-validation</artifactId>
                             <version>${micronaut.version}</version>
                         </annotationProcessorPath>
                         <annotationProcessorPath>
